@@ -3,7 +3,7 @@
 
   The following tools and a methods are used:
 
-  [impfuzzy](https://github.com/JPCERTCC/aa-tools/tree/master/impfuzzy) for fuzzy hash calculation.  
+  [impfuzzy](https://github.com/JPCERTCC/impfuzzy) for fuzzy hash calculation.  
   [Neo4j](https://neo4j.com) for a graph database.  
   [The Louvain Method](http://perso.uclouvain.be/vincent.blondel/research/louvain.html) to detect community from large networks.  
 
