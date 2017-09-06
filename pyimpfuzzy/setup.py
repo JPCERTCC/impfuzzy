@@ -19,6 +19,6 @@ setup(
         include_dirs=["/usr/local/include/", ],
     )],
     py_modules=["pyimpfuzzy"],
-    url="https://github.com/JPCERTCC/aa-tools/",
+    url="https://github.com/JPCERTCC/impfuzzy/",
     install_requires=['pefile']
 )

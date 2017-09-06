@@ -16,7 +16,7 @@
 ## Requirements
   This script requires the following modules:
 
-  * pyimpfuzzy https://github.com/JPCERTCC/aa-tools/tree/master/impfuzzy/pyimpfuzzy
+  * pyimpfuzzy https://github.com/JPCERTCC/impfuzzy/tree/master/pyimpfuzzy
   * py2neo v3 http://py2neo.org/v3/
   * pylouvain.py https://github.com/patapizza/pylouvain
 

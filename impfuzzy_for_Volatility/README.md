@@ -10,7 +10,7 @@
 ## Requirements
   This plugin requires the following modules:
 
-  * pyimpfuzzy https://github.com/JPCERTCC/aa-tools/tree/master/impfuzzy/pyimpfuzzy
+  * pyimpfuzzy https://github.com/JPCERTCC/impfuzzy/tree/master/pyimpfuzzy
 
 ## Usage
   Use -h to see help message.
