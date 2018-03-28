@@ -7,14 +7,14 @@ import ordlookup
 
 def get_impfuzzy(file):
     pe = pefileEx(file)
-    apilist, apilen = pe.calc_impfuzzy()
+    apilist = pe.calc_impfuzzy()
 
     return impfuzzyutil.hash_data(apilist)
 
 
 def get_impfuzzy_data(file):
     pe = pefileEx(data=file)
-    apilist, apilen = pe.calc_impfuzzy()
+    apilist = pe.calc_impfuzzy()
 
     return impfuzzyutil.hash_data(apilist)
 
@@ -66,4 +66,4 @@ class pefileEx(pefile.PE):
                 impstrs.append("%s.%s" % (libname.lower(), funcname.lower()))
 
         apilist = ",".join(impstrs)
-        return apilist, len(apilist)
+        return apilist
