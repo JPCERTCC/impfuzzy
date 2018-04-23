@@ -21,3 +21,9 @@
   More details are described in the following documents:   
   https://www.jpcert.or.jp/magazine/acreport-impfuzzy_neo4.html (Japanese)   
   http://blog.jpcert.or.jp/2017/03/malware-clustering-using-impfuzzy-and-network-analysis---impfuzzy-for-neo4j-.html (English)
+
+## Other Tools or Frameworks
+  [MISP](http://www.misp-project.org): Malware Information Sharing Platform and Threat Sharing  
+  [CRITs](https://crits.github.io): Collaborative Research Into Threats  
+  [MultiScanner](http://multiscanner.readthedocs.io/en/latest/): File Analysis Framework  
+  [ViruSign](https://www.virusign.com): Malware Research & Data Center, Virus Free Downloads
