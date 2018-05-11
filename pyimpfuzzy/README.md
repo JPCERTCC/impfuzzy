@@ -1,5 +1,6 @@
 # pyimpfuzzy
-  Python module for comparing the impfuzzy
+  Python module for comparing the impfuzzy  
+  pyimpfuzzy is python module which calculate and compare the impfuzzy(import fuzzy hashing)  
 
   More details are described in the following documents:   
   https://www.jpcert.or.jp/magazine/acreport-impfuzzy.html (Japanese)   
@@ -34,9 +35,9 @@ import sys
 
 hash1 = pyimpfuzzy.get_impfuzzy(sys.argv[1])
 hash2 = pyimpfuzzy.get_impfuzzy(sys.argv[2])
-print "ImpFuzzy1: %s" % hash1
-print "ImpFuzzy2: %s" % hash2
-print "Compare: %i" % pyimpfuzzy.hash_compare(hash1, hash2)
+print("ImpFuzzy1: %s" % hash1)
+print("ImpFuzzy2: %s" % hash2)
+print("Compare: %i" % pyimpfuzzy.hash_compare(hash1, hash2))
 ```
 ## Archive
   [pyimpfuzzy-0.1.tar.gz](https://pypi.python.org/packages/9b/f9/3abdd7e0e2cbfe3328260c06e38e693d86d54b95e9954a7ca6b953005513/pyimpfuzzy-0.1.tar.gz) sha256 09c997df16c822d88f0aac21e21cdfb7195716e2b24dc6c4554eaa99b7de81da  
