@@ -41,4 +41,5 @@ print("Compare: %i" % pyimpfuzzy.hash_compare(hash1, hash2))
 ```
 ## Archive
   [pyimpfuzzy-0.1.tar.gz](https://pypi.python.org/packages/9b/f9/3abdd7e0e2cbfe3328260c06e38e693d86d54b95e9954a7ca6b953005513/pyimpfuzzy-0.1.tar.gz) sha256 09c997df16c822d88f0aac21e21cdfb7195716e2b24dc6c4554eaa99b7de81da  
-  [pyimpfuzzy-0.2.tar.gz](https://pypi.python.org/packages/41/46/f01a1730da6b0a7e91a861b69ce1f79f244487ff1e4c05c30dba5cb22eea/pyimpfuzzy-0.2.tar.gz) sha256 06cfe1588055ceeef839446cea7bac9c08cce8aa2eb1621bc591a97af2729622
+  [pyimpfuzzy-0.2.tar.gz](https://pypi.python.org/packages/41/46/f01a1730da6b0a7e91a861b69ce1f79f244487ff1e4c05c30dba5cb22eea/pyimpfuzzy-0.2.tar.gz) sha256 06cfe1588055ceeef839446cea7bac9c08cce8aa2eb1621bc591a97af2729622  
+  [pyimpfuzzy-0.5.tar.gz](https://files.pythonhosted.org/packages/87/bd/552292946148a8300fcbca597f2acaf060a8e76d75219a3f4d0201178c1c/pyimpfuzzy-0.5.tar.gz) sha256 da9796df302db4b04a197128637f84988f1882f1e08fdd69bbf9fdc6cfbaf349
