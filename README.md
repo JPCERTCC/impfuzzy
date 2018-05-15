@@ -8,6 +8,9 @@
   https://www.jpcert.or.jp/magazine/acreport-impfuzzy.html (Japanese)   
   http://blog.jpcert.or.jp/2016/05/classifying-mal-a988.html (English)
 
+## pyimpfuzzy-windows
+  Python module comparing the impfuzzy for Windows  
+
 ## impfuzzy for Volatility
   Volatility plugin for comparing the impfuzzy and imphash
 
