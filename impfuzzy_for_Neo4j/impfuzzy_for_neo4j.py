@@ -214,7 +214,7 @@ def main():
             fl.write("%s,%s,%s,%s,%s\n" % (file, impfuzzy, md5, sha1, sha256))
             query = "MATCH (m:Malware) WHERE m.sha256=\"%s\" RETURN m" % sha256
             if impfuzzy:
-                if not GRAPH.data(query):
+                if not GRAPH.data(query) and sha256 not in [x[5] for x in hashlist_new]:
                     nodes.append(i)
                     hashlist_new.append([i, file, impfuzzy, md5, sha1, sha256])
                     i += 1
