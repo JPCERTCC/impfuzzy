@@ -140,7 +140,8 @@ def main():
     if len(sys.argv) == 1:
         parser.print_help()
         sys.exit()
-
+    
+    i= 0
     hashlist = []
     hashlist_new = []
     nodes = []
