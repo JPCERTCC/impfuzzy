@@ -67,3 +67,22 @@ class pefileEx(pefile.PE):
 
         apilist = ",".join(impstrs)
         return apilist
+
+def main():
+    import argparse
+    import sys
+
+    parser = argparse.ArgumentParser(description=
+                                     'compare impfuzzy hashes of files')
+    parser.add_argument('file1', metavar='FILE1', help='PE file')
+    parser.add_argument('file2', metavar='FILE2', help='PE file')
+    args = parser.parse_args()
+
+    hash1 = get_impfuzzy(args.file1)
+    hash2 = get_impfuzzy(args.file2)
+    print("ImpFuzzy1: %s" % hash1)
+    print("ImpFuzzy2: %s" % hash2)
+    print("Compare: %i" % hash_compare(hash1, hash2))
+
+if __name__ == '__main__':
+    main()
