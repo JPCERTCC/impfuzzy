@@ -18,6 +18,9 @@
   https://www.jpcert.or.jp/magazine/acreport-impfuzzy_volatility.html (Japanese)   
   http://blog.jpcert.or.jp/2016/12/a-new-tool-to-d-d6bc.html (English)
 
+## impfuzzy for Volatility3
+  Volatility plugin for comparing the impfuzzy / imphash / ssdeep
+
 ## impfuzzy for Neo4j
   Python script for clustering malware based on fuzzy hash and importing/visualizing the result using Neo4j
 
