@@ -10,15 +10,15 @@
 
 import logging, os, io
 
-from volatility.framework import interfaces, constants, exceptions, renderers
-from volatility.framework.objects import utility
-from volatility.framework.layers import resources
-from volatility.framework.renderers import format_hints
-from volatility.framework.configuration import requirements
-from volatility.framework.symbols import intermed
-from volatility.framework.symbols.windows import extensions
-from volatility.framework.symbols.windows.extensions import pe
-from volatility.plugins.windows import pslist, vadinfo
+from volatility3.framework import interfaces, constants, exceptions, renderers
+from volatility3.framework.objects import utility
+from volatility3.framework.layers import resources
+from volatility3.framework.renderers import format_hints
+from volatility3.framework.configuration import requirements
+from volatility3.framework.symbols import intermed
+from volatility3.framework.symbols.windows import extensions
+from volatility3.framework.symbols.windows.extensions import pe
+from volatility3.plugins.windows import pslist, vadinfo
 
 vollog = logging.getLogger(__name__)
 
@@ -47,6 +47,8 @@ vollog = logging.getLogger(__name__)
 class ImpHash(interfaces.plugins.PluginInterface):
     """Listing the Import Hash (imphash)"""
 
+    _required_framework_version = (1, 0, 0)
+
     @classmethod
     def get_requirements(cls):
         # Since we're calling the plugin, make sure we have the plugin's requirements
@@ -63,8 +65,8 @@ class ImpHash(interfaces.plugins.PluginInterface):
                 requirements.StringRequirement(name="imphashlist",
                                                description="Search imphash list file",
                                                optional=True),
-                requirements.PluginRequirement(name='pslist', plugin=pslist.PsList, version=(1, 0, 0)),
-                requirements.PluginRequirement(name='vadinfo', plugin=vadinfo.VadInfo, version=(1, 0, 0)),
+                requirements.PluginRequirement(name='pslist', plugin=pslist.PsList, version=(2, 0, 0)),
+                requirements.PluginRequirement(name='vadinfo', plugin=vadinfo.VadInfo, version=(2, 0, 0)),
                 ]
 
     @classmethod
@@ -169,6 +171,8 @@ class ImpHash(interfaces.plugins.PluginInterface):
 class ImpFuzzy(interfaces.plugins.PluginInterface):
     """Listing the Import Fuzzy Hashing (impfuzzy)"""
 
+    _required_framework_version = (1, 0, 0)
+
     @classmethod
     def get_requirements(cls):
         # Since we're calling the plugin, make sure we have the plugin's requirements
@@ -191,8 +195,8 @@ class ImpFuzzy(interfaces.plugins.PluginInterface):
                 requirements.IntRequirement(name='threshold',
                                             description="Import fuzzy hashing threshold (Default 30)",
                                             optional=True),
-                requirements.PluginRequirement(name='pslist', plugin=pslist.PsList, version=(1, 0, 0)),
-                requirements.PluginRequirement(name='vadinfo', plugin=vadinfo.VadInfo, version=(1, 0, 0)),
+                requirements.PluginRequirement(name='pslist', plugin=pslist.PsList, version=(2, 0, 0)),
+                requirements.PluginRequirement(name='vadinfo', plugin=vadinfo.VadInfo, version=(2, 0, 0)),
                 ]
 
     @classmethod
@@ -317,6 +321,8 @@ class ImpFuzzy(interfaces.plugins.PluginInterface):
 class Ssdeep(interfaces.plugins.PluginInterface):
     """Listing the File ssdeep"""
 
+    _required_framework_version = (1, 0, 0)
+
     @classmethod
     def get_requirements(cls):
         # Since we're calling the plugin, make sure we have the plugin's requirements
@@ -339,8 +345,8 @@ class Ssdeep(interfaces.plugins.PluginInterface):
                 requirements.IntRequirement(name='threshold',
                                             description="Ssdeep threshold (Default 30)",
                                             optional=True),
-                requirements.PluginRequirement(name='pslist', plugin=pslist.PsList, version=(1, 0, 0)),
-                requirements.PluginRequirement(name='vadinfo', plugin=vadinfo.VadInfo, version=(1, 0, 0)),
+                requirements.PluginRequirement(name='pslist', plugin=pslist.PsList, version=(2, 0, 0)),
+                requirements.PluginRequirement(name='vadinfo', plugin=vadinfo.VadInfo, version=(2, 0, 0)),
                 ]
 
     @classmethod
