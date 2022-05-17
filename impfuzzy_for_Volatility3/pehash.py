@@ -47,7 +47,7 @@ vollog = logging.getLogger(__name__)
 class ImpHash(interfaces.plugins.PluginInterface):
     """Listing the Import Hash (imphash)"""
 
-    _required_framework_version = (1, 0, 0)
+    _required_framework_version = (2, 0, 0)
 
     @classmethod
     def get_requirements(cls):
@@ -171,7 +171,7 @@ class ImpHash(interfaces.plugins.PluginInterface):
 class ImpFuzzy(interfaces.plugins.PluginInterface):
     """Listing the Import Fuzzy Hashing (impfuzzy)"""
 
-    _required_framework_version = (1, 0, 0)
+    _required_framework_version = (2, 0, 0)
 
     @classmethod
     def get_requirements(cls):
@@ -321,7 +321,7 @@ class ImpFuzzy(interfaces.plugins.PluginInterface):
 class Ssdeep(interfaces.plugins.PluginInterface):
     """Listing the File ssdeep"""
 
-    _required_framework_version = (1, 0, 0)
+    _required_framework_version = (2, 0, 0)
 
     @classmethod
     def get_requirements(cls):
